@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ayudatsenko.lesson11asynctask1.MainActivity">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/clicksBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="ClickMe" />
+
+            <TextView
+                android:id="@+id/clicksView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clicks: 0" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/progressBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Start" />
+
+        <TextView
+            android:id="@+id/statusView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status" />
+
+        <ProgressBar
+            android:id="@+id/indicator"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="0"/>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
